@@ -1,16 +1,59 @@
-/* style.css 파일에 아래 내용을 추가 */
-
-/* 기본적으로 모든 콘텐츠 섹션은 숨김 */
-.content-section {
-    display: none;
+/* General Body Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* 'active' 클래스를 가진 콘텐츠 섹션만 보여줌 */
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #333;
+    color: #ffffff;
+}
+
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 2rem 0;
+}
+
 .content-section.active {
     display: block;
 }
 
-/* 페이지 콘텐츠 레이아웃 스타일 */
 .page-container {
     max-width: 800px;
     margin: 0 auto;
@@ -20,16 +63,17 @@
 .page-container h1 {
     font-size: 2.5rem;
     font-weight: 500;
+    color: #ffffff;
 }
 
 .page-container .subtitle {
     font-size: 1.25rem;
-    color: #6b7280;
+    color: #a0a0a0;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-/* Support 목록 스타일 (이전에 만들었던 CSS 재활용) */
+/* Support List Styles */
 .support-list {
     list-style: none;
     padding: 0;
@@ -46,27 +90,28 @@
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    background-color: #f3f4f6;
+    background-color: #2a2a2a;
     border-radius: 8px;
     text-decoration: none;
-    color: #1f2937;
+    color: #e0e0e0;
     font-size: 1rem;
     min-width: 300px;
     transition: background-color 0.3s;
 }
 
 .support-list a:hover {
-    background-color: #e5e7eb;
+    background-color: #383838;
 }
 
 .support-list i {
     font-size: 1.5rem;
     width: 40px;
     margin-right: 15px;
-    color: #4b5563;
+    color: #a0a0a0;
 }
 
 .support-list strong {
     margin-right: 10px;
     min-width: 80px;
+    color: #ffffff;
 }
