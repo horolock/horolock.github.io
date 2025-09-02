@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Support</title>
+    <title>My App Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="support-container">
-        <h1>Support</h1>
-        <p>앱 사용과 관련하여 궁금한 점이나 문제가 있으시면 아래 채널로 문의해주세요.</p>
-        
-        <ul class="support-list">
-            <li>
-                <a href="mailto:horolock96@gmail.com">
-                    <i class="fa-solid fa-envelope"></i> <strong>Email:</strong> horolock96@gmail.com
-                </a>
-            </li>
-            <li>
-                <a href="https://x.com/horolock96" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i> <strong>X (Twitter):</strong> @horolock96
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/horolock" target="_blank">
-                    <i class="fa-brands fa-github"></i> <strong>Github:</strong> horolock
-                </a>
-            </li>
-        </ul>
-    </div>
+    <header class="main-header">
+        <nav class="tabs">
+            <a href="#home" class="tab active">🏠 Home</a>
+            <a href="#support" class="tab">💬 Support</a>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <section id="home" class="content active">
+            <h1>MyApp에 오신 것을 환영합니다!</h1>
+            <p>이곳은 앱을 소개하는 홈 화면입니다. 자유롭게 내용을 채워주세요.</p>
+            </section>
+
+        <section id="support" class="content">
+            <div class="support-container">
+                <h1>Support</h1>
+                <p>앱 사용과 관련하여 궁금한 점이나 문제가 있으시면 아래 채널로 문의해주세요.</p>
+                <ul class="support-list">
+                    <li><a href="mailto:horolock96@gmail.com"><i class="fa-solid fa-envelope"></i><strong>Email:</strong> horolock96@gmail.com</a></li>
+                    <li><a href="https://x.com/horolock96" target="_blank"><i class="fa-brands fa-x-twitter"></i><strong>X (Twitter):</strong> @horolock96</a></li>
+                    <li><a href="https://github.com/horolock" target="_blank"><i class="fa-brands fa-github"></i><strong>Github:</strong> horolock</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
