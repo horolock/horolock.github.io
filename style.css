@@ -1,0 +1,77 @@
+/* 기본 스타일 초기화 및 배경 설정 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* 전체 컨테이너 스타일 */
+.support-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+.support-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.support-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Support 목록 스타일 */
+.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.support-list li {
+    margin-bottom: 15px;
+}
+
+.support-list a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.support-list a:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+}
+
+/* 아이콘 스타일 */
+.support-list .fa-solid, 
+.support-list .fa-brands {
+    font-size: 1.5rem; /* 아이콘 크기 */
+    width: 40px; /* 아이콘 공간 확보 */
+    text-align: center;
+    margin-right: 15px;
+    color: #007bff; /* 아이콘 색상 */
+}
+
+.support-list strong {
+    margin-right: 10px;
+    min-width: 80px; /* 라벨 너비 고정으로 정렬 효과 */
+}
